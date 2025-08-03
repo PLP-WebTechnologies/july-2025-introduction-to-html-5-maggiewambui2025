@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Peggy's Baby Shop - Your trusted store for baby clothing, toys, and essentials." />
+  <meta name="keywords" content="Baby Shop, Baby Clothing, Baby Toys, Newborn Essentials, Kids Store, Peggy's Baby Shop" />
+  <meta name="author" content="Peggy's Baby Shop" />
+  <title>PEGGY'S BABY SHOP | Clothing, Toys & Essentials</title>
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="PEGGY'S BABY SHOP" />
+  <meta property="og:description" content="Shop quality baby clothes, toys, and more at Peggy's Baby Shop." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/babyshop.jpg" />
+  <meta property="og:url" content="https://www.peggysbabyshop.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header role="banner">
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about" aria-current="page">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>PEGGY'S BABY SHOP</h1>
+    <p>Your one-stop shop for all things baby — from newborn clothes to soft toys and essentials.</p>
+    <img src="images/babyshop.jpg" alt="Peggy's Baby Shop storefront with baby clothes and toys"/>
+  </header>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Us</h2>
+      <p>
+        At Peggy's Baby Shop, we believe every baby deserves comfort, safety, and style. We offer a wide selection of baby clothes,
+        accessories, toys, and everyday essentials that parents trust and babies love. Whether you're preparing for a new arrival or shopping for the perfect gift,
+        our family-friendly service and curated products make shopping a joy.
+      </p>
+    </section>
+
+    <section id="products" aria-labelledby="products-heading">
+      <h2 id="products-heading">Our Products</h2>
+      <article>
+        <h3>Clothing</h3>
+        <p>Soft, breathable, and adorable outfits for newborns and toddlers. From bodysuits to booties, we've got your little one covered — literally!<h3>Embedded image</h3>
+        <img src = "Baby cloth.jpg" alt="Quality cotton baby clothes" width = "400" Height = "300" ></p>
+      </article>
+      <article>
+        <h3>Toys</h3>
+        <p> colorful toys designed for safe play and early learning. Perfect for babies aged 0–3 years.</p>
+      </article>
+      <article>
+        <h3>Baby Essentials</h3>
+        <p>Diapers, wipes, feeding accessories, and more — trusted brands and baby-safe options to make parenting easier.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <p>We'd love to hear from you! Reach out with questions, orders, or feedback.</p>
+      <ul>
+        <li><strong>Phone:</strong> <a href="tel:+256781416417">0781416417</a></li>
+        <li><strong>Email:</strong> <a href="mailto:magwamboo@gmail.com">magwamboo@gmail.com</a></li>
+      </ul>
+      <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Peggy baby shop" required aria-required="true" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 PEGGY'S BABY SHOP. All rights reserved.</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+</body>
+</html>
