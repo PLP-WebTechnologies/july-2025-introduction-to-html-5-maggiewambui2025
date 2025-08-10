@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peggy’s Baby Shop | Kenya’s #1 Online Baby Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fff8f5;
+      color: #333;
+    }
+
+    header, main, footer {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #ffe8e4;
+      text-align: center;
+      border-bottom: 2px solid #ffbaba;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #d14b57;
+      font-weight: bold;
+    }
+
+    section {
+      margin-top: 2.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #ffe0e0;
+    }
+
+    fieldset {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 0.7rem 1.5rem;
+      margin-top: 1.5rem;
+      background-color: #ff8ca2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff6e89;
+    }
+
+    footer {
+      background-color: #fff0f0;
+      text-align: center;
+      border-top: 2px solid #ffbaba;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Peggy’s Baby Shop</h1>
+    <p>Your #1 Online Baby Store in Kenya – Quality You Can Trust!</p>
+    <nav>
+      <ul>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#comparison">Product Comparison</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Order Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Product Categories -->
+    <section id="categories">
+      <h2>Explore Our Product Categories</h2>
+      <ul>
+        <li><strong>Newborn Clothing:</strong> Bodysuits, Rompers, Mittens, Hats</li>
+        <li><strong>Baby Toys:</strong> Rattles, Teethers, Activity Mats</li>
+        <li><strong>Feeding Essentials:</strong> Bottles, Bibs, Sippy Cups</li>
+        <li><strong>Bath & Skincare:</strong> Towel Sets, Baby Lotion, Shampoo</li>
+        <li><strong>Gifts & Hampers:</strong> Curated Baby Gift Sets</li>
+      </ul>
+
+      <h3>Why Choose Peggy’s?</h3>
+      <ol>
+        <li>Locally owned & operated in Kenya</li>
+        <li>Nationwide delivery in 24–48 hours</li>
+        <li>100% baby-safe, certified products</li>
+      </ol>
+    </section>
+
+    <!-- Product Comparison Table -->
+    <section id="comparison">
+      <h2>Top Selling Products Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Age Range</th>
+            <th>Price (KES)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Soft Cotton Romper</td>
+            <td>Clothing</td>
+            <td>0–6 months</td>
+            <td>850</td>
+          </tr>
+          <tr>
+            <td>Musical Rattle Set</td>
+            <td>Toys</td>
+            <td>3–12 months</td>
+            <td>1200</td>
+          </tr>
+          <tr>
+            <td>3-in-1 Feeding Set</td>
+            <td>Feeding</td>
+            <td>0–2 years</td>
+            <td>1600</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+      <h2>See Our Products in Action</h2>
+      <p>Watch our product showcase and listen to a calming lullaby available with every toy set.</p>
+      
+      <video width="100%" controls>
+        <source src="https://www.vecteezy.com/video/44246423-set-of-baby-bodysuits-pants-socks-and-knitted-toys" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Sample Lullaby</h3>
+      <audio controls>
+        <source src="c:\Users\Elite X2 1013G3\Downloads\Kids-Animation-songs-Baby-Shark-CoComelon-Nursery-Rhymes--Kids-Songs.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <!-- HTML5 Order Form -->
+    <section id="form">
+      <h2>Place Your Order / Register</h2>
+      <form action="/submit" method="POST" autocomplete="on">
+        <!-- Customer Info -->
+        <fieldset>
+          <legend>Customer Information</legend>
+
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="Jane Wambui" />
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required pattern="07[0-9]{8}" placeholder="0712345678" />
+
+          <label for="county">County *</label>
+          <select id="county" name="county" required>
+            <option value="">-- Select County --</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="kiambu">Kiambu</option>
+            <option value="nakuru">Nakuru</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="kisumu">Kisumu</option>
+          </select>
+        </fieldset>
+
+        <!-- Product Details -->
+        <fieldset>
+          <legend>Order Details</legend>
+
+          <label for="product">Product *</label>
+          <select id="product" name="product" required>
+            <option value="">-- Choose a Product --</option>
+            <option value="romper">Soft Cotton Romper</option>
+            <option value="rattle">Musical Rattle Set</option>
+            <option value="feeding">3-in-1 Feeding Set</option>
+          </select>
+
+          <label for="quantity">Quantity *</label>
+          <input type="number" id="quantity" name="quantity" required min="1" max="10" placeholder="1" />
+
+          <label for="instructions">Delivery Instructions</label>
+          <textarea id="instructions" name="instructions" rows="4" placeholder="Leave at the gate, call on arrival..."></textarea>
+
+          <label for="promo">Promo Code</label>
+          <input type="text" id="promo" name="promo" value="PEGGYWELCOME" readonly />
+        </fieldset>
+
+        <!-- Preferences -->
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>Subscribe to Newsletter?</label>
+          <input type="radio" id="news-yes" name="newsletter" value="yes" checked />
+          <label for="news-yes">Yes</label>
+          <input type="radio" id="news-no" name="newsletter" value="no" />
+          <label for="news-no">No</label>
+        </fieldset>
+
+        <button type="submit">Submit Order</button>
+        <button type="reset">Reset Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Peggy’s Baby Shop | All Rights Reserved.</p>
+    <p>Email: <a href="mailto:info@peggybaby.co.ke">info@peggybaby.co.ke</a> | Call/WhatsApp: +254 712 345678</p>
+  </footer>
+
+</body>
+</html>
